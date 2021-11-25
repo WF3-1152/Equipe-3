@@ -31,14 +31,14 @@
                             $ip = $_SERVER['REMOTE_ADDR']; 
 
                             // On insère dans la base de données
-                            $insert = $bdd->prepare('INSERT INTO utilisateurs(pseudo, email, password, ip, token) VALUES(:pseudo, :email, :password, :ip, :token)');
-                            $insert->execute(array(
-                                'pseudo' => $pseudo,
-                                'email' => $email,
-                                'password' => $password,
-                                'ip' => $ip,
-                                'token' => bin2hex(openssl_random_pseudo_bytes(64))
-                            ));
+                            $insert = $bdd->prepare('INSERT INTO utilisateurs(pseudo, email, password, ip, token, role) VALUES(:pseudo, :email, :password, :ip, :token, :role)');
+                            $insert->bindValue(':pseudo', $pseudo);
+                            $insert->bindValue(':email', $email);
+                            $insert->bindValue(':password', $password);
+                            $insert->bindValue(':ip', $ip);
+                            $insert->bindValue(':token', bin2hex(openssl_random_pseudo_bytes(64)));
+                            $insert->bindValue(':role', 'member'); // Je foree le role par défaut à "membre"
+ .                           $insert->execute();
                             // On redirige avec le message de succès
                             header('Location:inscription.php?reg_err=success');
                             die();
