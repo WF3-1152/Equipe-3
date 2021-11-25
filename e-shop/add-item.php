@@ -132,8 +132,8 @@ if(!empty($_POST)){
 
                         <!-- Image -->
                         <div class="mb-3">
-							<label for="images" class="form-label">URL de l'image</label>
-							<input type="text" id="images" name="images" class="form-control">
+							<label for="images" class="form-label">Ajoutez une image</label>
+							<input type="file" id="images" name="images" class="form-control">
 						</div>
 
 
