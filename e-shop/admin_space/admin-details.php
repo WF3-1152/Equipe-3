@@ -2,7 +2,7 @@
 
 // Inclut le fichier à l'intérieur de l'actuel
 // je peux utiliser toutes les variables présentes dans le fichier "config.php" puisque j'ai utilisé "require"
-require 'inc/config.php';
+require '../inc/config.php';
 
 // Je cherche mon article en base de données
 # url d'appel : http://localhost/php/site_actu/read-article.php?id=8
@@ -15,7 +15,7 @@ if(isset($_GET['id']) && !empty($_GET['id']) && is_numeric($_GET['id'])){
 	$article = $query->fetch(PDO::FETCH_ASSOC); // Je récupère une ligne de données
 }
 ?>
-<?php require 'user_header.php'; ?>
+<?php require 'admin_header.php'; ?>
 
 <body class="d-flex flex-column h-100">
 
@@ -59,7 +59,7 @@ if(isset($_GET['id']) && !empty($_GET['id']) && is_numeric($_GET['id'])){
                     </div>
 
                     <a class="btn btn-warning form-control d-block mt-4" href="cartAction.php?action=addToCart&id=<?php echo $mon_article["id"];?>">Ajouter au panier <i class="fas fa-shopping-cart"></i></a>
-                    <a class="btn btn-outline-dark d-block mt-3" href="home.php">Retour</a>
+                    <a class="btn btn-outline-dark d-block mt-3" href="list-item.php">Retour</a>
 
 				</div>
 
@@ -69,4 +69,4 @@ if(isset($_GET['id']) && !empty($_GET['id']) && is_numeric($_GET['id'])){
 		</div>
 	</main>
 
-	<?php include 'footer.php'; ?>
+	<?php include '../footer.php'; ?>

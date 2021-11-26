@@ -1,11 +1,5 @@
 <?php 
-    include_once 'panier/Cart.class.php'; 
-    $cart = new Cart; 
-
-    // Include the database config file 
-    require_once 'inc/dbConfig.php';
-
-    require 'header.php';
+    require 'user_header.php';
 ?>
 <?php require 'carousel.php';?>
 <div class="container">

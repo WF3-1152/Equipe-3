@@ -4,19 +4,16 @@
     <div class="container p-4">
       <div class="row">
         <div class="col-lg-3 col-md-6 mb-4">
-          <h5 class="mb-3" style="letter-spacing: 2px; color: #ffff;">shopping online</h5>
+          <h5 class="mb-3" style="letter-spacing: 2px; color: #ffff;">Conteact</h5>
           <ul class="list-unstyled mb-0">
             <li class="mb-1">
-              <a href="#!" style="color: #EDF7F7;">frequently asked questions</a>
+              <a href="#!" style="color: #EDF7F7;">72 rue de E-shop</a>
             </li>
             <li class="mb-1">
-              <a href="#!" style="color: #EDF7F7;">delivery</a>
+              <a href="#!" style="color: #EDF7F7;">07 12 34 56 78</a>
             </li>
             <li class="mb-1">
-              <a href="#!" style="color: #EDF7F7;">pricing</a>
-            </li>
-            <li>
-              <a href="#!" style="color: #EDF7F7;">where we deliver?</a>
+              <a href="#!" style="color: #EDF7F7;">contact@eshop.com</a>
             </li>
           </ul>
         </div>

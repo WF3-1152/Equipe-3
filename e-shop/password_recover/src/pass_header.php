@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- MyStyle -->
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="../../../styles/style.css">
 
     <title>ZORA - E-SHOP</title>
   </head>
@@ -34,10 +34,10 @@
                 <ul class="menu"> <!-- Menu Begin -->
 
                     <li>
-                        <a href="register/inscription.php">Inscrivez-vous</a>
+                        <a href="../inscription.php">Inscrivez-vous</a>
                     </li>
                     <li>
-                        <a href="register/connexion.php">Connectez-vous</a>
+                        <a href="../index.php">Connectez-vous</a>
                     </li>
 
                 </ul> <!-- Menu Finish -->
@@ -54,8 +54,8 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="home.php">
-              <img src="assets/logo.png" alt="">
+      <a class="navbar-brand" href="../../home.php">
+              <img src="../../assets/logo.png" alt="">
       </a>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -78,9 +78,6 @@
           <input class="form-control me-3" type="search" placeholder="Rechercher" aria-label="Search">
           <button class="btn btn-warning" type="submit">Rechercher</button>
         </form>
-      </div>
-      <div class="cart-view" style="margin-left:5vh"> 
-        <a href="viewCart.php" class="text-warning" style="text-decoration:none;font-size:30px; " title="View Cart"> <?php echo ($cart->total_items() > 0)?$cart->total_items().' <i class="fas fa-shopping-basket"></i>':'<i class="fas fa-shopping-basket"></i>'; ?></a>
       </div>
     </div>
 </nav> <!-- Nav Finish -->
