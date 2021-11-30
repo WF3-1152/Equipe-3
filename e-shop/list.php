@@ -3,6 +3,13 @@
 // ce fichier contient ma connexion à la base de données
 require 'inc/config.php';
 
+// Initialize shopping cart class 
+include_once 'panier/Cart.class.php'; 
+$cart = new Cart; 
+ 
+// Include the database config file 
+require_once 'inc/dbConfig.php'; 
+
 // Je prépare ma requete SQL. 
 $query = $bdd->prepare('SELECT * FROM item');
 $query->execute(); // J'execute ma requete SQL

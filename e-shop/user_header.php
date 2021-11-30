@@ -32,12 +32,17 @@
             <div class="col-md-6 offer"> <!-- Col-md-6 Begin -->
 
                 <ul class="menu"> <!-- Menu Begin -->
-
                     <li>
-                        <a href="register/inscription.php">Inscrivez-vous</a>
+                        <i class="fas fa-shopping-cart"></i> 
+                        <a href="viewCart.php">Mon Panier</a>
+                    </li> 
+                    <li>
+                        <i class="fas fa-user"></i>
+                        <a href="admin_space/mon_compte.php">Mon Compte</a>
                     </li>
                     <li>
-                        <a href="register/connexion.php">Connectez-vous</a>
+                        <i class="fas fa-power-off"></i>
+                        <a href="register/deconnexion.php">Déconnexion</a>
                     </li>
 
                 </ul> <!-- Menu Finish -->
@@ -54,7 +59,7 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="home.php">
+      <a class="navbar-brand" href="#">
               <img src="assets/logo.png" alt="">
       </a>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -70,7 +75,7 @@
               <li><a class="dropdown-item" href="#">Accessoires</a></li>
               <li><a class="dropdown-item" href="#">Chaussures</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="utilisateurs/index.php">Se connecter</a></li>
+              <li><a class="dropdown-item" href="#">Se connecter</a></li>
             </ul>
           </li>
         </ul>
@@ -79,8 +84,8 @@
           <button class="btn btn-warning" type="submit">Rechercher</button>
         </form>
       </div>
-      <div class="cart-view" style="margin-left:5vh"> 
-        <a href="viewCart.php" class="text-warning" style="text-decoration:none;font-size:30px; " title="View Cart"> <?php echo ($cart->total_items() > 0)?$cart->total_items().' <i class="fas fa-shopping-basket"></i>':'<i class="fas fa-shopping-basket"></i>'; ?></a>
-      </div>
+
     </div>
 </nav> <!-- Nav Finish -->
+
+
